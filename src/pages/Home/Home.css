@@ -1,0 +1,32 @@
+section {
+    background-color: #FAF7F2;
+}
+
+#products p {
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    font-size: 3.2rem;
+    color: #CE2829;
+}
+
+#products h2 {
+    font-size: 4.2rem;
+    font-weight: 800;
+}
+
+#products button {
+    font-size: 1.8rem;
+    border-radius: 5rem;
+    padding: 1.7rem 0;
+    width: 18.5rem;
+}
+
+#card-div {
+    padding-bottom: 10rem;
+}
+
+@media screen and (max-width:1280px) {
+    #products nav {
+        justify-content: center !important;
+    }
+}

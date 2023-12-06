@@ -13,7 +13,7 @@ const Hero = () => {
     return (
         <section id="hero">
             <div className="container">
-                <img className="py-5" src={require("../../assests/logos/logo.svg")} alt="hero-img" />
+                <img className="py-5" src={require("../../assets/logos/logo.svg")} alt="hero-img" />
                 <p className="hero-p1">fırsatı kaçırma</p>
                 <h2 className="hero-p2">KOD ACIKTIRIR <br />PIZZA, DOYURUR</h2>
             </div>

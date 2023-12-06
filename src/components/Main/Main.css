@@ -11,7 +11,7 @@ main {
 }
 
 #pizza-card {
-    background-image: url('../../assests/images/kart-1.png');
+    background-image: url('../../assets/images/kart-1.png');
     height: 53.6rem;
     color: white;
 }
@@ -40,7 +40,7 @@ main {
 }
 
 #burger-card {
-    background-image: url('../../assests/images/kart-2.png');
+    background-image: url('../../assets/images/kart-2.png');
     height: 25.6rem;
     color: white;
     margin-bottom: 2.4rem;
@@ -52,7 +52,7 @@ main {
 }
 
 #courier-card {
-    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url('../../assests/images/kart-3.png');
+    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url('../../assets/images/kart-3.png');
     height: 25.6rem;
     color: black;
 }
@@ -70,16 +70,16 @@ main {
     }
 
     #pizza-card {
-        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../../assests/images/kart-1.png');
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../../assets/images/kart-1.png');
     }
 
     #burger-card {
-        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../../assests/images/kart-2.png');
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../../assets/images/kart-2.png');
         margin-bottom: 1rem;
     }
 
     #courier-card {
-        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../../assests/images/kart-3.png');
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../../assets/images/kart-3.png');
     }
 
     .card-padding {
