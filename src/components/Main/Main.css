@@ -1,0 +1,92 @@
+main {
+    padding-top: 12rem;
+    background-color: #FAF7F2;
+}
+
+.product-card {
+    background-size: cover;
+    background-position: center;
+    width: 63.6rem;
+    border-radius: 1rem;
+}
+
+#pizza-card {
+    background-image: url('../../assests/images/kart-1.png');
+    height: 53.6rem;
+    color: white;
+}
+
+.card-padding {
+    padding: 4.5rem 0 0 5rem;
+}
+
+#pizza-card h2 {
+    font-family: 'Quattrocento', serif;
+    font-size: 6.8rem;
+    line-height: 115%;
+}
+
+#pizza-card p {
+    font-size: 2rem;
+}
+
+.order-btn {
+    font-size: 1.4rem;
+    border-radius: 3rem;
+    padding: 1.35rem 3.6rem;
+    border: none;
+    color: #CE2829;
+    margin-top: 1.5rem;
+}
+
+#burger-card {
+    background-image: url('../../assests/images/kart-2.png');
+    height: 25.6rem;
+    color: white;
+    margin-bottom: 2.4rem;
+}
+
+#burger-card h2,
+#courier-card h2 {
+    font-size: 3.2rem;
+}
+
+#courier-card {
+    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url('../../assests/images/kart-3.png');
+    height: 25.6rem;
+    color: black;
+}
+
+.red-text {
+    color: #CE2829;
+    font-size: 3.2rem;
+}
+
+
+@media screen and (max-width : 1280px) {
+
+    .product-card {
+        max-width: 100%;
+    }
+
+    #pizza-card {
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../../assests/images/kart-1.png');
+    }
+
+    #burger-card {
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../../assests/images/kart-2.png');
+        margin-bottom: 1rem;
+    }
+
+    #courier-card {
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../../assests/images/kart-3.png');
+    }
+
+    .card-padding {
+        padding: 4.5rem 0 0 2.5rem;
+    }
+
+    main .container {
+        flex-direction: column;
+    }
+}
