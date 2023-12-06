@@ -1,41 +1,18 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import OrderForm from "../../components/OrderForm/OrderForm"
 import "./PizzaOrder.css";
-import Ingredients from "../../components/Ingredients/Ingredients";
+
 
 const PizzaOrder = () => {
-    const orderObject = {
-        name: "",
-        size: "",
-        curst: "",
-        ingredients: [],
-        note: "",
-    };
 
     const price = "85.50";
 
-    const [order, setOrder] = useState(orderObject);
-
-    const [count, setCount] = useState(1);
-
-    const submitHandler = (event) => {
-        event.preventDefault();
-    };
-
-    const changeHandler = (event) => {
-        const { name, value } = event.target;
-        setOrder({ ...order, [name]: value });
-    };
-
-    useEffect(() => {
-        console.log(order);
-    })
     return (
         <>
             <div id="order-banner">
                 <div>
-                    <img src={require("../../assets/logos/logo.svg")} />
+                    <img src={require("../../assets/logos/logo.svg")} alt="" />
                 </div>
             </div>
 
@@ -63,9 +40,10 @@ const PizzaOrder = () => {
                         kökenli lezzetli bir yemektir. . Küçük bir pizzaya bazen pizzetta
                         denir.
                     </p>
-                    <Ingredients order={order} setOrder={setOrder} />
                 </div>
             </section>
+
+            <OrderForm />
         </>
     );
 }

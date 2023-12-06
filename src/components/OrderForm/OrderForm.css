@@ -1,0 +1,32 @@
+#order-form {
+    width: 31.7%;
+}
+
+#size-dough {
+    display: flex;
+    column-gap: 15%;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+button,
+select,
+input {
+    background-color: #FAF7F2;
+}
+
+#result {
+    background-color: #FAF7F2;
+    width: 60%
+}
+
+#result button {
+    background-color: #FDC913;
+}
+
+@media screen and (max-width:1280px) {
+    #order-form {
+        width: 100%;
+    }
+}

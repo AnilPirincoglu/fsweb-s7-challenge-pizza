@@ -52,3 +52,9 @@
     padding: 2rem 0;
     word-spacing: 8rem;
 }
+
+@media screen and (max-width:1280px) {
+    #intro>div {
+        width: 100%;
+    }
+}

@@ -3,7 +3,6 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import PizzaOrder from "./pages/PizzaOrder/PizzaOrder";
 import "./App.css";
-import Ingredients from "./components/Ingredients/Ingredients";
 
 
 const App = () => {
@@ -16,7 +15,6 @@ const App = () => {
         <Route path="/pizza">
           <PizzaOrder />
         </Route>
-
       </Switch>
     </div>
   );
