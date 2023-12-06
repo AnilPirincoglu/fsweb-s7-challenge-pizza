@@ -1,0 +1,54 @@
+#order-banner {
+    background-image: url('../../assets/images/form-banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 28.8rem;
+    width: 100%;
+    background-color: #FAF7F2;
+}
+
+#order-banner div {
+    width: 100%;
+    background-color: #ce2828;
+}
+
+#order-banner img {
+    padding: 2.7rem 0;
+}
+
+#intro {
+    background-color: #FAF7F2;
+}
+
+#intro>div {
+    width: 31.7%;
+}
+
+#intro div nav {
+    padding: 2rem 0;
+    padding-top: 8rem;
+}
+
+.size-sixteen {
+    font-size: 1.6rem;
+}
+
+#price {
+    font-size: 2.8rem;
+}
+
+#pizza-name {
+    font-size: 2.2remrem;
+    padding: 2rem 0;
+}
+
+#intro>div>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#intro>div>div>span.fw-light {
+    padding: 2rem 0;
+    word-spacing: 8rem;
+}

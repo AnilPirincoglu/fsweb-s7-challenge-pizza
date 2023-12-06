@@ -1,0 +1,10 @@
+fieldset {
+    row-gap: 3.8rem;
+    height: 27.5rem;
+}
+
+fieldset label {
+    padding-left: .5rem;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
