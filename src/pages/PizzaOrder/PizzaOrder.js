@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import OrderForm from "../../components/OrderForm/OrderForm"
 import "./PizzaOrder.css";
+import Footer from "../../components/Footer/Footer";
 
 
 const PizzaOrder = (props) => {
@@ -43,6 +44,7 @@ const PizzaOrder = (props) => {
             </section>
 
             <OrderForm setOrderSummary={setOrderSummary} />
+            <Footer />
         </>
     );
 }

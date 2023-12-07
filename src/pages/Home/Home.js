@@ -4,6 +4,7 @@ import NavBar from "../../components/NavBar";
 import Main from "../../components/Main/Main"
 import "./Home.css";
 import Card from "../../components/Card/Card";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
 
@@ -50,7 +51,7 @@ const Home = () => {
                 </div>
 
             </section>
-
+            <Footer />
         </>
     );
 }
