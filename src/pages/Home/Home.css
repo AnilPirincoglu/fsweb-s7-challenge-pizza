@@ -25,6 +25,11 @@ section {
     padding-bottom: 10rem;
 }
 
+button:hover {
+    background-color: black;
+    color: white;
+}
+
 @media screen and (max-width:1280px) {
     #products nav {
         justify-content: center !important;

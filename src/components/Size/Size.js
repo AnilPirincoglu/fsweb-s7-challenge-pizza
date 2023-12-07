@@ -15,24 +15,24 @@ const Size = (props) => {
                 <Button
                     id="small"
                     outline
-                    onClick={() => setOrder({ ...order, size: "Small" })}
-                    active={order.size === "Small"}
+                    onClick={() => setOrder({ ...order, size: "S" })}
+                    active={order.size === "S"}
                 >
                     S
                 </Button>
                 <Button
                     id="medium"
                     outline
-                    onClick={() => setOrder({ ...order, size: "Medium" })}
-                    active={order.size === "Medium"}
+                    onClick={() => setOrder({ ...order, size: "M" })}
+                    active={order.size === "M"}
                 >
                     M
                 </Button>
                 <Button
                     id="large"
                     outline
-                    onClick={() => setOrder({ ...order, size: "Large" })}
-                    active={order.size === "Large"}
+                    onClick={() => setOrder({ ...order, size: "L" })}
+                    active={order.size === "L"}
                 >
                     L
                 </Button>

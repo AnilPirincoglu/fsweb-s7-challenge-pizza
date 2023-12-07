@@ -20,9 +20,9 @@ const Dough = (props) => {
                 <option value="default" disabled>
                     -Hamur Seçiniz-
                 </option>
-                <option value="thin">İnce Hamur</option>
-                <option value="regular">Normal Hamur</option>
-                <option value="thick">Kalın Hamur</option>
+                <option value="İnce Hamur">İnce Hamur</option>
+                <option value="Normal Hamur">Normal Hamur</option>
+                <option value="Kalın Hamur">Kalın Hamur</option>
             </select>
         </div>
     );
