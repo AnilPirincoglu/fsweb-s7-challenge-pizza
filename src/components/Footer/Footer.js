@@ -9,19 +9,19 @@ const Footer = () => {
                     <div className="d-flex flex-column p-5">
                         <img src={require("../../assets/logos/logo-footer.svg")} />
                         <div>
-                            <img src={require("../../assets/icons/icon-1.png")} width="30" height="30" class="d-inline-block align-top" alt="" />
+                            <img src={require("../../assets/icons/icon-1.png")} width="30" height="30" alt="" />
                             <address className="fs-3 d-inline">
                                 341 Londonderry Road, Istanbul Türkiye
                             </address>
                         </div>
                         <div>
-                            <img src={require("../../assets/icons/icon-2.png")} width="30" height="30" class="d-inline-block align-top" alt="" />
+                            <img src={require("../../assets/icons/icon-2.png")} width="30" height="30" alt="" />
                             <span className="fs-3 d-inline">
                                 aciktim@teknolojikyemekler.com
                             </span>
                         </div>
                         <div>
-                            <img src={require("../../assets/icons/icon-3.png")} width="30" height="30" class="d-inline-block align-top" alt="" />
+                            <img src={require("../../assets/icons/icon-3.png")} width="30" height="30" alt="" />
                             <span className="fs-3 d-inline">+90 216 123 45 67</span>
                         </div>
                     </div>
