@@ -21,7 +21,7 @@ const Ingredients = (props) => {
             <fieldset className="d-flex flex-column flex-wrap">
 
                 <div>
-                    <input type="checkbox" id="peperoni" value="Peperoni" onChange={changeHandler} />
+                    <input type="checkbox" id="peperoni" value="Peperoni" onChange={changeHandler} data-cy="peperoni" />
                     <label htmlFor="peperoni">Peperoni</label>
                 </div>
                 <div>
@@ -29,7 +29,7 @@ const Ingredients = (props) => {
                     <label htmlFor="grilledChicken">Tavuk Izgara</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="corn" value="Mısır" onChange={changeHandler} />
+                    <input type="checkbox" id="corn" value="Mısır" onChange={changeHandler} data-cy="corn" />
                     <label htmlFor="corn">Mısır</label>
                 </div>
                 <div>
@@ -45,11 +45,11 @@ const Ingredients = (props) => {
                     <label htmlFor="sausage">Sosis</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="onion" value="Soğan" onChange={changeHandler} />
+                    <input type="checkbox" id="onion" value="Soğan" onChange={changeHandler} data-cy="onion" />
                     <label htmlFor="onion">Soğan</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="sucuk" value="Sucuk" onChange={changeHandler} />
+                    <input type="checkbox" id="sucuk" value="Sucuk" onChange={changeHandler} data-cy="sucuk" />
                     <label htmlFor="sucuk">Sucuk</label>
                 </div>
                 <div>

@@ -1,17 +1,23 @@
 import React from "react";
+import { useEffect } from "react";
+import { Link } from "react-router-dom"
 import "./OrderSummary.css";
 
 const OrderSummary = (props) => {
     const { orderSummary } = props;
 
+    useEffect(() => {
+        console.log(orderSummary);
+    }, [])
+
     return (
         <>
             <div id="summary" className="vh-100 vw-100 d-flex flex-column justify-content-evenly align-items-center pb-5">
-                <div className="mt-5">
-                    <img src={require("../../assets/logos/logo.svg")} />
-                </div>
+                <Link to="/" className="mt-5">
+                    <img src={require("../../assets/logos/logo.svg")} alt="" />
+                </Link>
                 <div>
-                    <p id className="mt-5 pt-5">lezzetin yolda</p>
+                    <p className="mt-5 pt-5">lezzetin yolda</p>
                     <h2>SİPARİŞ ALINDI</h2>
                 </div>
 
@@ -29,13 +35,17 @@ const OrderSummary = (props) => {
 
                 <div
                     id="total"
-                    className="fs-4 row-gap-3 text-center d-flex flex-column border border-white p-5 my-5">
+                    className="fs-4 row-gap-3 d-flex flex-column border border-white p-5 my-5">
                     <h3 className="px-5">Sipariş Toplamı</h3>
-                    <div className="d-flex justify-content-around fs-3">
+                    <div className="d-flex justify-content-between fs-3">
+                        <label>Adet</label>
+                        <label>{orderSummary.count}</label>
+                    </div>
+                    <div className="d-flex justify-content-between fs-3">
                         <label>Seçimler</label>
                         <label>{orderSummary.extra}₺</label>
                     </div>
-                    <div className="d-flex justify-content-around fs-3 pb-2">
+                    <div className="d-flex justify-content-between fs-3 pb-2">
                         <label>Toplam</label>
                         <label>{orderSummary.total.toFixed(2)}₺</label>
                     </div>

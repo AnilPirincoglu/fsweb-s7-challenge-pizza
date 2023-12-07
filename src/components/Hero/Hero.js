@@ -17,7 +17,7 @@ const Hero = () => {
                 <p className="hero-p1">fırsatı kaçırma</p>
                 <h2 className="hero-p2">KOD ACIKTIRIR <br />PIZZA, DOYURUR</h2>
             </div>
-            <button id="order-pizza" onClick={clickHandler}>ACIKTIM</button>
+            <button id="order-pizza" onClick={clickHandler} data-cy="pizzaOrder">ACIKTIM</button>
         </section>
     );
 

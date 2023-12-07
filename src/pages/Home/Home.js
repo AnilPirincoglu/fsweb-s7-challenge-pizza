@@ -38,7 +38,7 @@ const Home = () => {
                 <p>en cok paketlenen menüler</p>
                 <h2 className="mb-5">Acıktıran Kodlara Doyuran Lezzetler</h2>
                 <nav className="container d-flex justify-content-between flex-wrap gap-3 mb-5 ">
-                    <button ><img src={require("../../assets/icons/1.svg")} alt="" /> Ramen</button>
+                    <button data-cy="button" ><img src={require("../../assets/icons/1.svg")} alt="" /> Ramen</button>
                     <button ><img src={require("../../assets/icons/2.svg")} alt="" /> Pizza</button>
                     <button ><img src={require("../../assets/icons/3.svg")} alt="" /> Burger</button>
                     <button ><img src={require("../../assets/icons/4.svg")} alt="" /> French Fries</button>

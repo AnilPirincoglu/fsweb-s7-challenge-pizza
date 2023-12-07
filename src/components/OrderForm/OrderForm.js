@@ -66,10 +66,9 @@ const OrderForm = (props) => {
     const submitHandler = (event) => {
         event.preventDefault();
         if (isValid) {
-            axios.post("https://reqres.in/api/users", order)
+            axios.post("https://reqres.in/api/orders", order)
                 .then(response => {
-
-                    setOrderSummary({ ...response.data, ...{ "count": count, "extra": extra, "total": total } });
+                    setOrderSummary({ ...response.data, "count": count, "extra": extra, "total": total });
                     history.push("/summary");
                 })
                 .catch(eject => { console.log(eject); })
@@ -115,15 +114,16 @@ const OrderForm = (props) => {
             </label>
             <br />
             <input
-                className="fs-4 w-100 py-3 rounded border-0 mt-3"
+                className="fs-4 w-100 py-3 rounded border-0 my-3"
                 type="text"
                 id="name-input"
                 name="name"
                 value={order.name}
                 onChange={changeHandler}
                 placeholder="İsim Giriniz:"
+                data-cy="name"
             />
-            <span className="fs-4 fw-bold my-4 text-danger">{formErrors.name}</span>
+            <span className="fs-4 fw-bold text-danger">{formErrors.name}</span>
             <br />
 
             <label className="fs-2 mt-5" htmlFor="special-text">
@@ -177,6 +177,7 @@ const OrderForm = (props) => {
                         type="submit"
                         className="border-0 rounded py-2"
                         disabled={!isValid}
+                        data-cy="submitButton"
                     >
                         Sipariş Ver
                     </button>

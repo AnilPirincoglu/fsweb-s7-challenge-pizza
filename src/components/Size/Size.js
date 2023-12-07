@@ -11,8 +11,9 @@ const Size = (props) => {
                 Boyut Seç <span className="text-danger fs-2">*</span>{" "}
             </label>
             <br />
-            <ButtonGroup id="">
+            <ButtonGroup>
                 <Button
+                    data-cy="small"
                     id="small"
                     outline
                     onClick={() => setOrder({ ...order, size: "S" })}
@@ -21,6 +22,7 @@ const Size = (props) => {
                     S
                 </Button>
                 <Button
+                    data-cy="medium"
                     id="medium"
                     outline
                     onClick={() => setOrder({ ...order, size: "M" })}
@@ -29,6 +31,7 @@ const Size = (props) => {
                     M
                 </Button>
                 <Button
+                    data-cy="large"
                     id="large"
                     outline
                     onClick={() => setOrder({ ...order, size: "L" })}

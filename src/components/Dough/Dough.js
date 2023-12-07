@@ -16,6 +16,7 @@ const Dough = (props) => {
                 defaultValue="default"
                 onChange={changeHandler}
                 className="border-0 rounded"
+                data-cy="dough"
             >
                 <option value="default" disabled>
                     -Hamur Seçiniz-
