@@ -15,6 +15,7 @@ const Ingredients = (props) => {
     useEffect(() => {
         setOrder({ ...order, ingredients: ingredientsState })
     }, [ingredientsState]);
+
     return (
         <>
             <fieldset className="d-flex flex-column flex-wrap">

@@ -1,4 +1,4 @@
-#order-form {
+#pizza-form {
     width: 31.7%;
 }
 
@@ -26,7 +26,7 @@ input {
 }
 
 @media screen and (max-width:1280px) {
-    #order-form {
+    #pizza-form {
         width: 100%;
     }
 }

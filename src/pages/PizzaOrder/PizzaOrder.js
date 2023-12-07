@@ -4,9 +4,8 @@ import OrderForm from "../../components/OrderForm/OrderForm"
 import "./PizzaOrder.css";
 
 
-const PizzaOrder = () => {
-
-    const price = "85.50";
+const PizzaOrder = (props) => {
+    const { setOrderSummary } = props;
 
     return (
         <>
@@ -27,7 +26,7 @@ const PizzaOrder = () => {
 
                     <h2 id="pizza-name">Position Absulute Pizza</h2>
                     <div>
-                        <span id="price" className="fw-bold">{price}₺</span>
+                        <span id="price" className="fw-bold">85.50₺</span>
                         <span className="size-sixteen fw-light">4.9 (200)</span>
                     </div>
 
@@ -43,7 +42,7 @@ const PizzaOrder = () => {
                 </div>
             </section>
 
-            <OrderForm />
+            <OrderForm setOrderSummary={setOrderSummary} />
         </>
     );
 }
